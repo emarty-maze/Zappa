@@ -2,7 +2,7 @@ import os
 import sys
 
 # add the Lambda root path into the sys.path
-sys.path.append('/var/task/turbot')
+sys.path.append('/var/task')
 
 
 def get_django_wsgi(settings_module):
