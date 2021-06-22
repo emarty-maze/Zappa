@@ -6,6 +6,9 @@ sys.path.append('/var/task')
 
 
 def get_django_wsgi(settings_module):
+
+    sys.stdout.write(settings_module)
+
     from django.core.wsgi import get_wsgi_application
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", settings_module)
 
