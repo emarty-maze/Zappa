@@ -7,6 +7,7 @@ sys.path.append('/var/task')
 
 def get_django_wsgi(settings_module):
 
+    print('\n\n THIS IS A THING! \n\n')
     print(settings_module)
 
     from django.core.wsgi import get_wsgi_application
